@@ -1,0 +1,20 @@
+{
+  "name": "JandCStudios",
+  "version": "1.0.0",
+  "description": "A place to showcase our passion for photography and videography.",
+  "main": "src/home.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "live-server": "^1.2.1"
+  },
+  "author": "Jack and Caroline McKain",
+  "license": "MIT"
+}
