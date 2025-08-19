@@ -12,9 +12,9 @@ const slideshows = {};
 function showSlides(section, n) {
     const slides = document.querySelectorAll(`#${section}-slideshow .slide`);
     if (!slides.length) return;
-    if (!slideshows[section]) slideshows[section] = 0;
+    if (!slideshows[section] && slideshows[section] !== 0) slideshows[section] = 0;
     if (n >= slides.length) slideshows[section] = 0;
-    if (n < 0) slideshows[section] = slides.length - 1;
+    else if (n < 0) slideshows[section] = slides.length - 1;
     else slideshows[section] = n;
     slides.forEach((img, i) => img.style.display = (i === slideshows[section] ? "block" : "none"));
 }
@@ -31,16 +31,18 @@ window.onload = function() {
 };
 </script>
 <body>
-    <header>
-        <h1>Gallery</h1>
-        <nav>
-            <a href="home.html">About Us</a>
+    <header class="site-header">
+    <div class="header-content">
+        <h2 class="logo">J&C Studios</h2>
+        <nav class="main-nav">
+            <a href="index.html">About Us</a>
             <a href="gallery.html">Gallery</a>
             <a href="pricing.html">Pricing</a>
             <a href="gear.html">Gear</a>
             <a href="contact.html">Contact Us</a>
         </nav>
-    </header>
+    </div>
+</header>
     <main>
 <section id="wedding">
     <h2>Wedding</h2>
