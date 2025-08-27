@@ -410,3 +410,32 @@ button:hover {
     margin-top: 5em;
     color: #000000;
 }
+
+/* Gear */
+.camera-gear {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.gear-row {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.gear-item {
+    max-width: 250px;
+    text-align: center;
+}
+
+.gear-item img {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 2px solid #ffffff;
+}
